@@ -37,16 +37,15 @@ def ec_app():
     return app
 
 st.title("💬 Chatbot")
-st.caption("🚀 An Embedchain app powered by Mistral!")
+st.caption("🩻 ACR Appropriateness Criteria app powered by Mistral!")
 app = ec_app()
 if "messages" not in st.session_state:
     st.session_state.messages = [
         {
             "role": "assistant",
             "content": """
-        Hi! I'm a chatbot. I can answer questions and learn new things!\n
-        Ask me anything and if you want me to learn something do `/add <source>`.\n
-        I can learn mostly everything. :)
+        Hi! I'm a chatbot. I was trained on the ACR Appropriateness Criteria.\n 
+        Give me a patient scenario and ask for the best imaging study to order and I will deliver! :)
         """,
         }
     ]
