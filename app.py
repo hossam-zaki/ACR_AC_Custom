@@ -2,8 +2,9 @@ import os
 import csv
 import queue
 import threading
+import streamlit as st
 # replace this with your HF key
-os.environ["HUGGINGFACE_ACCESS_TOKEN"] = "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"
+os.environ["HUGGINGFACE_ACCESS_TOKEN"] = st.secrets["hf_token"]
 
 # from embedchain import App
 # app = App.from_config("mistral.yaml")
